@@ -1,0 +1,53 @@
+<h1>Hey Precious Osariemen Ebose❤️</h1>
+<h2>Will you be my Valentine?</h2>
+
+<button class="yes" onclick="sayYes()">YES 💖</button>
+<button class="no" id="noBtn" onmouseover="moveNo()">NO 😅</button>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  text-align:center;
+  background:#ffe6f0;
+  padding-top:120px;
+}
+
+h1{font-size:40px;}
+h2{font-size:28px;}
+
+button{
+  padding:15px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  margin:15px;
+  cursor:pointer;
+}
+
+.yes{
+  background:#ff4d88;
+  color:white;
+}
+
+.no{
+  position:absolute;
+  background:#999;
+  color:white;
+}
+</style>
+
+<script>
+function sayYes(){
+  document.body.innerHTML = `
+    <h1>YAY!!! 💖</h1>
+    <h2>You just made me one lucky nigga 😭❤️</h2>
+    <p>Happy Valentine's Day Muri 🌹</p>
+  `;
+}
+
+function moveNo(){
+  let btn=document.getElementById("noBtn");
+  btn.style.top=Math.random()*500+"px";
+  btn.style.left=Math.random()*500+"px";
+}
+</script>
